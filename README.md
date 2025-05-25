@@ -1,6 +1,38 @@
 # Turing Machine – Binary Real Number Addition
 
-## Purpose
+## Project Purpose & Explanation
+
+This project explores the capabilities and limitations of Turing machines in simulating arithmetic operations on binary real numbers using a **deterministic, single tape, one-way infinite machine**. Specifically, it demonstrates how a classical model of computation can be used to perform **fixed point binary addition**, a task typically handled by modern digital hardware or high level programming languages.
+
+The input format requires parsing and aligning binary real numbers with fractional parts, managing carry propagation across the decimal point, and handling formatting constraints, all within the bounds of the Turing machine model. This highlights both the power and complexity of using Turing machines for practical computation. Designing such a machine encourages thinking in terms of pure computation theory rather than traditional programming constructs.
+
+## Input/Output Generation with Python
+
+To support this project and ensure correctness, the repository includes a utility script:
+
+### `BinaryNumberGenerator.py`
+
+This Python file automates the process of:
+
+- Generating valid binary real number pairs `X#Y` in the correct format
+- Computing the **expected output** of `X + Y` using precise decimal arithmetic
+- Verifying the correctness of the Turing machine by comparing its output to the Python-generated ground truth
+
+The generator uses fixed point binary to decimal conversion with Python’s `decimal.Decimal` for high precision results, followed by a custom binary encoder to produce outputs in the same format expected from the Turing machine.
+
+This script is especially useful for:
+
+- Creating random test cases with varying lengths and precision
+- Rapidly testing the Turing machine’s behavior under many scenarios
+- Debugging edge cases, such as carries across the decimal point or formatting boundary conditions
+
+  
+## This is a picture of my implementation if you do not have JFLAP. - Rick Kabuto
+<img width="1343" alt="Screenshot 2025-05-04 at 6 10 35 PM" src="https://github.com/user-attachments/assets/6df13e72-2ae6-4c84-bba4-a63fee4c81f9" />
+
+
+## -=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-
+## Project Directions From The Class 
 
 Construct a Turing machine that adds two binary real numbers. An input will be of the form:
 
@@ -67,7 +99,5 @@ To handle formatting:
 - Each block may handle sub-operations like formatting, padding, or addition
 - The output must be aligned and cleaned per the rules above
 
-## This is a picture of my implementation. - Rick Kabuto
-<img width="1343" alt="Screenshot 2025-05-04 at 6 10 35 PM" src="https://github.com/user-attachments/assets/6df13e72-2ae6-4c84-bba4-a63fee4c81f9" />
 
 
