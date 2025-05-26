@@ -30,8 +30,6 @@ This script is especially useful for:
 ## This is a picture of my implementation if you do not have JFLAP. - Rick Kabuto
 <img width="1343" alt="Screenshot 2025-05-04 at 6 10 35 PM" src="https://github.com/user-attachments/assets/6df13e72-2ae6-4c84-bba4-a63fee4c81f9" />
 
-
-## -=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=-
 ## Project Directions From The Class 
 
 Construct a Turing machine that adds two binary real numbers. An input will be of the form:
