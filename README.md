@@ -2,7 +2,7 @@
 
 ## Project Purpose & Explanation
 
-Professor - David Garrison
+Professor - David Garrison & Thomas Kilcoyne
 
 This project explores the capabilities and limitations of Turing machines in simulating arithmetic operations on binary real numbers using a **deterministic, single tape, one-way infinite machine**. Specifically, it demonstrates how a classical model of computation can be used to perform **fixed point binary addition**, a task typically handled by modern digital hardware or high level programming languages.
 
